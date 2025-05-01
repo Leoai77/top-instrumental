@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Instrumental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Top Instrumental</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Estilos Musicais</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+            </ul>
+                <li><a href="#upload">Enviar Instrumental</a></li>
+            </ul>
+        <a href="https://wa.me/seunumerodetelefone" class="whatsapp-button">Fale Conosco</a>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="banner">
+    <img src="banner.jpg" alt="Banner Top Instrumental">
+
+    </section>
+        <h1>Encontre os melhores playbacks para seu projeto musical!</h1>
+        <a href="#" class="btn">Ver Acervo</a>
+    </section>
+
+    <!-- Área de Destaques -->
+    <section class="destaques">
+        <h2>Playbacks Mais Procurados</h2>
+        <div class="grid">
+            <div class="item">Música 1</div>
+            <div class="item">Música 2</div>
+            <div class="item">Música 3</div>
+            <div class="item">Música 4</div>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="categorias">
+        <h2>Categorias</h2>
+        <div class="grid">
+            <div class="item">Sertanejo</div>
+            <div class="item">Gospel</div>
+            <div class="item">MPB</div>
+            <div class="item">Internacional</div>
+            <div class="item">Infantil</div>
+            <div class="item">Anos 80/90</div>
+            <div class="item">Forró</div>
+            <div class="item">Outros</div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Top Instrumental - Todos os direitos reservados</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+<!-- Seção de Upload -->
+<section id="upload" class="upload-section">
+    <h2>Envie seu Instrumental e Ganhe Créditos!</h2>
+    <form id="uploadForm">
+        <input type="file" id="fileInput" accept=".mp3,.wav" required>
+        <button type="submit">Enviar Instrumental</button>
+    </form>
+    <p id="uploadStatus"></p>
+</section>
+
+    </footer>
+<script>
+    const uploadForm = document.getElementById('uploadForm');
+    const uploadStatus = document.getElementById('uploadStatus');
+
+    uploadForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const file = document.getElementById('fileInput').files[0];
+        if (file) {
+            uploadStatus.innerText = "Arquivo enviado com sucesso! Você ganhou +3 créditos!";
+        } else {
+            uploadStatus.innerText = "Por favor, selecione um arquivo.";
+        }
+    });
+</script>
+
+</body>
+</html>
