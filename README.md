@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-button {
+    background: #25D366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Banner Principal */
+.banner {
+    background: url('banner.jpg') center/cover no-repeat;
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.banner .btn {
+    background: #ff5e57;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Seções */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Grade de Itens */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.item {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ff5e57;
+    text-decoration: none;
+}
